@@ -50,7 +50,7 @@ So let's change our code to the regular and shorter declaration way:
 
 {{{diff_step 2.3}}}
 
-and let's add the `ng-strict-di` directive so that if case there is a minification problem, we will find in already in development and not only after minification in production:
+and let's add the `ng-strict-di` directive so that in case there is a minification problem, we will find it already in development and not only after minification in production:
 
 {{{diff_step 2.4}}}
 
