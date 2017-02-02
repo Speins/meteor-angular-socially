@@ -13,7 +13,7 @@ Let's change our template to be dynamic:
 We replaced the hard-coded party list with the [ngRepeat](https://docs.angularjs.org/api/ng/directive/ngRepeat) directive and two Angular 1 expressions:
 
 * The `ng-repeat="party in parties"` attribute in the `li` tag is an Angular 1 repeater directive. The repeater tells Angular 1 to create a `li` element for each party in the list using the `li` tag as the template.
-* The expressions wrapped in double-curly-braces ( `{{dstache}}party.name}}` and `{{dstache}}party.description}}` ) will be replaced by the value of the expressions.
+* The expressions wrapped in double-curly-braces ( `{{party.name}}` and `{{party.description}}` ) will be replaced by the value of the expressions.
 
 We have added a new directive, called `ng-controller`, which attaches the `PartiesListCtrl` controller to the `div` tag. At this point *the expressions in double-curly-braces are referring to our application model, which is set up in our `PartiesListCtrl` controller.*
 
